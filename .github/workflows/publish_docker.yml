@@ -7,7 +7,7 @@ on:
 
 jobs:
   push_to_registry:
-    if: ${{ github.repository == 'jacquelinegarrahan/lcls-rhel6-conda-docker' }}
+    if: ${{ github.repository == 'slaclab/lcls-rhel6-conda-docker' }}
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:

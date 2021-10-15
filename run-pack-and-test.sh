@@ -14,5 +14,4 @@ bash /tmp/$ENVIRONMENT_NAME/bin/conda-unpack
 
 
 # run tests
-cd /tmp/project
-pytest
+bash /tmp/run-test.sh

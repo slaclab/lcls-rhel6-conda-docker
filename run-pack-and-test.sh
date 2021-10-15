@@ -14,4 +14,6 @@ bash /tmp/$ENVIRONMENT_NAME/bin/conda-unpack
 
 
 # run tests
-bash /tmp/run-test.sh
+if [[ -f "/tmp/run-test.sh" ]]; then
+    bash /tmp/run-test.sh
+fi

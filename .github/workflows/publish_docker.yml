@@ -1,10 +1,9 @@
 name: Publish Docker Image
 
-on:
-  release:
-    types: [published]
-    branches:
-      - main
+on:  
+  push:
+    tags:
+      - '*'
 
 jobs:
   push_to_registry:

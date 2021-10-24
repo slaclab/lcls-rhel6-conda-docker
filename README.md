@@ -18,4 +18,4 @@ These are all handled by the GitHub action [`slaclab/lcls-rhel6-conda-pack`](htt
 Releases to this repository trigger a workflow that builds the docker image using the repository Dockerfile. The resulting image is published to [dockerhub](https://hub.docker.com/repository/docker/jgarrahan/lcls-rhel6-conda-docker) using the release version as a tag. 
 
 ## Tests
-The Docker image expects tests defined and run using a bash script mounted to `/tmp/run-test.sh`. An effort should be made by code developers to implement a comprehensive set of tests for their packages with the understanding that the efficacy of this pack-and-test process is a function of their effort in doing so.
+The Docker image expects tests defined and run using a bash script mounted to `/tmp/run-test.sh`. An effort should be made by code developers to implement a comprehensive set of tests for their packages with the understanding that the efficacy of this pack-and-test process is a function of their effort in doing so.  The Python environment described by their yaml will be active during testing.

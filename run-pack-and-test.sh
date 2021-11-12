@@ -8,7 +8,7 @@ source /root/.bashrc
 
 # create an dpack environment
 conda env create -f $ENVIRONMENT_FILE
-conda pack -n $ENVIRONMENT_NAME --output $HOME/$ENVIRONMENT_NAME.tar.gz
+conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $HOME/$ENVIRONMENT_NAME.tar.gz
 
 # unpack 
 cp $HOME/$ENVIRONMENT_NAME.tar.gz /tmp/$ENVIRONMENT_NAME.tar.gz
